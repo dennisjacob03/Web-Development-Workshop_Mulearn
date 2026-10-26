@@ -739,25 +739,15 @@ addBtn.addEventListener("click", function () {
 # 10. Common Mistakes
 
 | Mistake | Solution |
-
 |---|---|
-
 | CSS file does not load | Check `href="style.css"` and the filename |
-
 | JavaScript does not run | Check `src="script.js"` and the browser console |
-
 | Button click causes an error | Check the element ID and event listener |
-
 | `getElementById()` returns `null` | Ensure the ID matches and the script runs after the HTML element exists |
-
 | Link does not jump to a section | Match the link's `href="#id"` to the section's `id` |
-
 | New list item does not appear | Check that the list was found and `appendChild()` is called |
-
 | CSS rule has no effect | Check selector spelling, braces, property names, and values |
-
 | Elements are too close together | Adjust margin, padding, or gap |
-
 | Page looks small on mobile | Add the viewport meta tag |
 
 ## Debugging tip
