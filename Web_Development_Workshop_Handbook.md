@@ -47,18 +47,11 @@ Examples include:
 
 ## The three main technologies
 
-  -----------------------------------------------------------------------
-  Technology              Main purpose            Examples
-  ----------------------- ----------------------- -----------------------
-  HTML                    Structure and content   Headings, paragraphs,
-                                                  links, lists, buttons
-
-  CSS                     Appearance and layout   Colors, fonts, spacing,
-                                                  responsive layouts
-
-  JavaScript              Behaviour and           Click actions, changing
-                          interaction             text, adding content
-  -----------------------------------------------------------------------
+| Technology | Main purpose | Examples |
+|---|---|---|
+| HTML | Structure and content | Headings, paragraphs, links, lists, buttons |
+| CSS | Appearance and layout | Colors, fonts, spacing, responsive layouts |
+| JavaScript | Behaviour and interaction | Click actions, changing text, adding content |
 
 A simple way to remember them:
 
