@@ -1,6 +1,6 @@
 # Web Development Workshop Handbook
 
-## HTML, CSS, JavaScript, DOM and Practical Website Building
+### HTML, CSS, JavaScript, DOM and Practical Website Building
 
 **Level:** Beginner to Beginner--Intermediate\
 **Duration:** 1 Hour (Day 1)\
@@ -24,8 +24,7 @@
 11. Practice Challenges
 12. Quick Questions and Answers
 13. Practical Assessment
-14. One-Hour Workshop Schedule
-15. Quick Revision Sheet
+14. Quick Revision Sheet
 
 ---
 
