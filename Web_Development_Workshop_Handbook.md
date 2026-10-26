@@ -7,7 +7,7 @@
 **Technology:** HTML, CSS, JavaScript, DOM, VS Code and a web browser\
 **Mini Project:** Tech Club Website
 
-------------------------------------------------------------------------
+---
 
 # Table of Contents
 
@@ -27,7 +27,7 @@
 14. One-Hour Workshop Schedule
 15. Quick Revision Sheet
 
-------------------------------------------------------------------------
+---
 
 # 1. Introduction to Web Development
 
@@ -38,42 +38,42 @@ that run in a web browser.
 
 Examples include:
 
--   Personal portfolio websites
--   College and student club websites
--   News websites
--   Online stores
--   Event registration pages
--   Student portals
+- Personal portfolio websites
+- College and student club websites
+- News websites
+- Online stores
+- Event registration pages
+- Student portals
 
 ## The three main technologies
 
-| Technology | Main purpose | Examples |
-|---|---|---|
-| HTML | Structure and content | Headings, paragraphs, links, lists, buttons |
-| CSS | Appearance and layout | Colors, fonts, spacing, responsive layouts |
+| Technology | Main purpose              | Examples                                     |
+| ---------- | ------------------------- | -------------------------------------------- |
+| HTML       | Structure and content     | Headings, paragraphs, links, lists, buttons  |
+| CSS        | Appearance and layout     | Colors, fonts, spacing, responsive layouts   |
 | JavaScript | Behaviour and interaction | Click actions, changing text, adding content |
 
 A simple way to remember them:
 
--   **HTML:** What is on the page?
--   **CSS:** How does it look?
--   **JavaScript:** What can it do?
+- **HTML:** What is on the page?
+- **CSS:** How does it look?
+- **JavaScript:** What can it do?
 
 ## What participants will build
 
 In this workshop, we will create a small **Tech Club website**
 containing:
 
--   A navigation bar
--   A welcome section
--   An activities list
--   A button that changes text
--   A button that adds a new activity
+- A navigation bar
+- A welcome section
+- An activities list
+- A button that changes text
+- A button that adds a new activity
 
 The aim is to understand the building blocks rather than create a large
 website in one hour.
 
-------------------------------------------------------------------------
+---
 
 # 2. How a Website Works
 
@@ -95,15 +95,15 @@ change their text, attributes, styles, or children.
 For example, JavaScript can change a heading after a button is clicked
 without reloading the page.
 
-------------------------------------------------------------------------
+---
 
 # 3. Setting Up the Project
 
 ## Requirements
 
--   A computer with a modern web browser
--   A code editor such as Visual Studio Code
--   No framework or build tools are required
+- A computer with a modern web browser
+- A code editor such as Visual Studio Code
+- No framework or build tools are required
 
 ## Step 1: Create a folder
 
@@ -111,16 +111,16 @@ Create a folder named `tech-club-website`.
 
 Inside it, create these three files:
 
-``` text
+```text
 tech-club-website/
 ├── index.html
 ├── style.css
 └── script.js
 ```
 
--   `index.html` contains the page structure.
--   `style.css` contains the styling.
--   `script.js` contains the interactions.
+- `index.html` contains the page structure.
+- `style.css` contains the styling.
+- `script.js` contains the interactions.
 
 ## Step 2: Open the project
 
@@ -129,7 +129,7 @@ Open the folder in VS Code. Start by editing `index.html`.
 You can open `index.html` directly in a browser. After editing and
 saving HTML or CSS, refresh the browser to see the changes.
 
-------------------------------------------------------------------------
+---
 
 # 4. HTML Fundamentals
 
@@ -141,7 +141,7 @@ structure and meaning of web content.
 HTML uses elements, usually written with an opening tag and a closing
 tag.
 
-``` html
+```html
 <p>This is a paragraph.</p>
 ```
 
@@ -149,64 +149,64 @@ Here, `<p>` is the opening tag and `</p>` is the closing tag.
 
 ## Basic HTML document
 
-``` html
+```html
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tech Club</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <h1>Welcome to Tech Club!</h1>
-  <p>Learn, build, and innovate together.</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech Club</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Welcome to Tech Club!</h1>
+    <p>Learn, build, and innovate together.</p>
 
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
 ```
 
 ## Important parts
 
--   `<!DOCTYPE html>` tells the browser to use modern HTML standards.
--   `<html>` is the root element.
--   `<head>` contains page information and links to resources.
--   `<title>` sets the browser-tab title.
--   `<body>` contains visible page content.
--   `<link>` connects the CSS file.
--   `<script>` connects the JavaScript file.
--   The viewport meta tag helps the page scale correctly on mobile
-    screens.
+- `<!DOCTYPE html>` tells the browser to use modern HTML standards.
+- `<html>` is the root element.
+- `<head>` contains page information and links to resources.
+- `<title>` sets the browser-tab title.
+- `<body>` contains visible page content.
+- `<link>` connects the CSS file.
+- `<script>` connects the JavaScript file.
+- The viewport meta tag helps the page scale correctly on mobile
+  screens.
 
 ## Common HTML elements
 
-  Element      Purpose                 Example
-  ------------ ----------------------- -------------------------------------------
-  `h1`--`h6`   Headings                `<h1>Welcome</h1>`
-  `p`          Paragraph               `<p>Hello!</p>`
-  `a`          Link                    `<a href="#about">About</a>`
-  `img`        Image                   `<img src="club.jpg" alt="Club members">`
-  `ul`         Unordered list          `<ul>...</ul>`
-  `ol`         Ordered list            `<ol>...</ol>`
-  `li`         List item               `<li>Workshop</li>`
-  `nav`        Navigation section      `<nav>...</nav>`
-  `section`    Thematic page section   `<section>...</section>`
-  `button`     Interactive button      `<button>Click</button>`
-  `div`        Generic container       `<div>...</div>`
-  `footer`     Footer content          `<footer>...</footer>`
+| Element    | Purpose               | Example                                   |
+| ---------- | --------------------- | ----------------------------------------- |
+| `h1`--`h6` | Headings              | `<h1>Welcome</h1>`                        |
+| `p`        | Paragraph             | `<p>Hello!</p>`                           |
+| `a`        | Link                  | `<a href="#about">About</a>`              |
+| `img`      | Image                 | `<img src="club.jpg" alt="Club members">` |
+| `ul`       | Unordered list        | `<ul>...</ul>`                            |
+| `ol`       | Ordered list          | `<ol>...</ol>`                            |
+| `li`       | List item             | `<li>Workshop</li>`                       |
+| `nav`      | Navigation section    | `<nav>...</nav>`                          |
+| `section`  | Thematic page section | `<section>...</section>`                  |
+| `button`   | Interactive button    | `<button>Click</button>`                  |
+| `div`      | Generic container     | `<div>...</div>`                          |
+| `footer`   | Footer content        | `<footer>...</footer>`                    |
 
 ## Links and navigation
 
 A link can navigate to another website:
 
-``` html
+```html
 <a href="https://example.com">Visit website</a>
 ```
 
 A link can also jump to a section on the same page:
 
-``` html
+```html
 <a href="#activities">Activities</a>
 
 <section id="activities">
@@ -220,7 +220,7 @@ The `href="#activities"` value matches the `id="activities"` attribute.
 
 An unordered list uses bullet points:
 
-``` html
+```html
 <ul>
   <li>Web Development</li>
   <li>Hackathons</li>
@@ -230,7 +230,7 @@ An unordered list uses bullet points:
 
 An ordered list uses numbers:
 
-``` html
+```html
 <ol>
   <li>Plan the page</li>
   <li>Write the HTML</li>
@@ -242,22 +242,22 @@ An ordered list uses numbers:
 
 Attributes provide additional information to elements.
 
-``` html
+```html
 <p id="intro" class="highlight">Welcome to the club.</p>
 ```
 
--   `id` identifies one particular element and should be unique within
-    the page.
--   `class` can be shared by multiple elements.
--   JavaScript can find an element using its ID.
--   CSS can select elements by tag, ID, or class.
+- `id` identifies one particular element and should be unique within
+  the page.
+- `class` can be shared by multiple elements.
+- JavaScript can find an element using its ID.
+- CSS can select elements by tag, ID, or class.
 
 ## Exercise
 
 Add a heading, a paragraph, a navigation link, and a list containing
 three activities.
 
-------------------------------------------------------------------------
+---
 
 # 5. Building the Tech Club Website
 
@@ -265,7 +265,7 @@ Add the following content inside the `<body>` element of `index.html`.
 Keep the stylesheet link in `<head>` and the script link near the end of
 `<body>`.
 
-``` html
+```html
 <nav>
   <h2>Tech Club</h2>
   <a href="#home">Home</a>
@@ -296,16 +296,16 @@ Keep the stylesheet link in `<head>` and the script link near the end of
 
 ## Concepts to explain while coding
 
--   `nav` groups navigation links.
--   `section` groups related content.
--   `h1` is the main heading; `h2` introduces a subsection.
--   `ul` and `li` create a bullet list.
--   `button` creates a control that can respond to a click when
-    JavaScript is added.
--   IDs such as `welcomeBtn` and `activityList` make specific elements
-    easy to target.
+- `nav` groups navigation links.
+- `section` groups related content.
+- `h1` is the main heading; `h2` introduces a subsection.
+- `ul` and `li` create a bullet list.
+- `button` creates a control that can respond to a click when
+  JavaScript is added.
+- IDs such as `welcomeBtn` and `activityList` make specific elements
+  easy to target.
 
-------------------------------------------------------------------------
+---
 
 # 6. CSS Fundamentals
 
@@ -316,20 +316,20 @@ presentation of HTML elements.
 
 CSS rule structure:
 
-``` css
+```css
 p {
   color: blue;
   font-size: 18px;
 }
 ```
 
--   `p` is the selector.
--   `color` and `font-size` are properties.
--   `blue` and `18px` are values.
+- `p` is the selector.
+- `color` and `font-size` are properties.
+- `blue` and `18px` are values.
 
 ## Selectors
 
-``` css
+```css
 /* Select all paragraph elements */
 p {
   color: #334155;
@@ -348,15 +348,15 @@ p {
 
 ## Margin and padding
 
--   **Margin** creates space outside an element.
--   **Padding** creates space between an element's content and its
-    border.
+- **Margin** creates space outside an element.
+- **Padding** creates space between an element's content and its
+  border.
 
 ## Style the website
 
 Add this to `style.css`:
 
-``` css
+```css
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -412,20 +412,20 @@ footer {
 
 ## Concepts to explain
 
--   `font-family` changes the text font.
--   `background` sets the background color.
--   `padding` adds internal spacing.
--   `display: flex` arranges the navigation content in a row.
--   `gap` adds space between flex items.
--   `:hover` applies styling when the pointer is over an element.
--   `border-radius` rounds the button corners.
+- `font-family` changes the text font.
+- `background` sets the background color.
+- `padding` adds internal spacing.
+- `display: flex` arranges the navigation content in a row.
+- `gap` adds space between flex items.
+- `:hover` applies styling when the pointer is over an element.
+- `border-radius` rounds the button corners.
 
 ## Optional challenge
 
 Ask participants who finish early to change the theme color, adjust the
 spacing, or add a CSS class to highlight an activity.
 
-------------------------------------------------------------------------
+---
 
 # 7. JavaScript Fundamentals
 
@@ -439,7 +439,7 @@ the DOM.
 
 Variables store values.
 
-``` javascript
+```javascript
 let clubName = "Tech Club";
 const activityCount = 3;
 
@@ -447,15 +447,15 @@ console.log(clubName);
 console.log(activityCount);
 ```
 
--   `let` declares a variable that can be reassigned.
--   `const` declares a binding that cannot be reassigned.
--   `console.log()` prints a value in the browser console.
+- `let` declares a variable that can be reassigned.
+- `const` declares a binding that cannot be reassigned.
+- `console.log()` prints a value in the browser console.
 
 ## Functions
 
 A function groups instructions that can be run when needed.
 
-``` javascript
+```javascript
 function greetStudent() {
   alert("Welcome to the workshop!");
 }
@@ -471,7 +471,7 @@ clicking a button, typing in an input, or submitting a form.
 In JavaScript, an event listener can run a function when an event
 occurs.
 
-``` javascript
+```javascript
 const button = document.getElementById("welcomeBtn");
 
 button.addEventListener("click", function () {
@@ -486,26 +486,26 @@ button is clicked.
 
 Use:
 
-``` javascript
+```javascript
 button.addEventListener("click", greetStudent);
 ```
 
 Do not use this when you want the function to run only after a click:
 
-``` javascript
+```javascript
 button.addEventListener("click", greetStudent());
 ```
 
 The second version calls the function immediately instead of passing the
 function itself as the event handler.
 
-------------------------------------------------------------------------
+---
 
 # 8. Events and DOM Manipulation
 
 ## Find an HTML element
 
-``` javascript
+```javascript
 const heading = document.getElementById("heading");
 ```
 
@@ -513,7 +513,7 @@ This finds the element whose ID is `heading`.
 
 ## Change text
 
-``` javascript
+```javascript
 heading.textContent = "Welcome to Our Coding Community!";
 ```
 
@@ -521,7 +521,7 @@ The visible heading changes without reloading the page.
 
 ## Create and add an element
 
-``` javascript
+```javascript
 const list = document.getElementById("activityList");
 
 const item = document.createElement("li");
@@ -536,7 +536,7 @@ This creates a new list item and adds it to the existing list.
 
 Add this to `script.js`:
 
-``` javascript
+```javascript
 const welcomeBtn = document.getElementById("welcomeBtn");
 const message = document.getElementById("message");
 
@@ -564,14 +564,16 @@ addBtn.addEventListener("click", function () {
 
 ## DOM methods summary
 
-  Method or property            Purpose
-  ----------------------------- --------------------------------------------
-  `document.getElementById()`   Find an element by its ID
-  `addEventListener()`          Run a function in response to an event
-  `textContent`                 Read or change text
-  `document.createElement()`    Create a new element
-  `appendChild()`               Add a child element
-  `console.log()`               Print debugging information in the console
+Method or property Purpose
+
+---
+
+`document.getElementById()` Find an element by its ID
+`addEventListener()` Run a function in response to an event
+`textContent` Read or change text
+`document.createElement()` Create a new element
+`appendChild()` Add a child element
+`console.log()` Print debugging information in the console
 
 ## Exercise
 
@@ -579,7 +581,7 @@ addBtn.addEventListener("click", function () {
 2.  Add a new activity to the list when the button is clicked.
 3.  Change the main heading using JavaScript.
 
-------------------------------------------------------------------------
+---
 
 # 9. Complete Project Code
 
@@ -588,53 +590,53 @@ the page step by step.
 
 ## `index.html`
 
-``` html
+```html
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tech Club</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <nav>
-    <h2>Tech Club</h2>
-    <a href="#home">Home</a>
-    <a href="#activities">Activities</a>
-  </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech Club</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <h2>Tech Club</h2>
+      <a href="#home">Home</a>
+      <a href="#activities">Activities</a>
+    </nav>
 
-  <main>
-    <section id="home">
-      <h1 id="heading">Welcome to Tech Club!</h1>
-      <p>Learn, build, and innovate together.</p>
-      <button id="welcomeBtn">Say Hello</button>
-      <p id="message" aria-live="polite"></p>
-    </section>
+    <main>
+      <section id="home">
+        <h1 id="heading">Welcome to Tech Club!</h1>
+        <p>Learn, build, and innovate together.</p>
+        <button id="welcomeBtn">Say Hello</button>
+        <p id="message" aria-live="polite"></p>
+      </section>
 
-    <section id="activities">
-      <h2>Our Activities</h2>
-      <ul id="activityList">
-        <li>Web Development</li>
-        <li>Hackathons</li>
-        <li>Coding Workshops</li>
-      </ul>
-      <button id="addBtn">Add Activity</button>
-    </section>
-  </main>
+      <section id="activities">
+        <h2>Our Activities</h2>
+        <ul id="activityList">
+          <li>Web Development</li>
+          <li>Hackathons</li>
+          <li>Coding Workshops</li>
+        </ul>
+        <button id="addBtn">Add Activity</button>
+      </section>
+    </main>
 
-  <footer>
-    <p>Made by the Tech Club</p>
-  </footer>
+    <footer>
+      <p>Made by the Tech Club</p>
+    </footer>
 
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
 ```
 
 ## `style.css`
 
-``` css
+```css
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -706,7 +708,7 @@ footer {
 
 ## `script.js`
 
-``` javascript
+```javascript
 const welcomeBtn = document.getElementById("welcomeBtn");
 const message = document.getElementById("message");
 
@@ -726,45 +728,37 @@ addBtn.addEventListener("click", function () {
 
 ## Test the finished website
 
--   The navigation links jump to the correct sections.
--   The welcome button displays a message.
--   The add button inserts a new activity.
--   The CSS file styles the navbar, buttons, and page.
--   The layout adapts to narrower screens.
+- The navigation links jump to the correct sections.
+- The welcome button displays a message.
+- The add button inserts a new activity.
+- The CSS file styles the navbar, buttons, and page.
+- The layout adapts to narrower screens.
 
-------------------------------------------------------------------------
+---
 
 # 10. Common Mistakes
 
-  -----------------------------------------------------------------------
-  Mistake                             Solution
-  ----------------------------------- -----------------------------------
-  CSS file does not load              Check `href="style.css"` and the
-                                      filename
+| Mistake | Solution |
 
-  JavaScript does not run             Check `src="script.js"` and the
-                                      browser console
+|---|---|
 
-  Button click causes an error        Check the element ID and event
-                                      listener
+| CSS file does not load | Check `href="style.css"` and the filename |
 
-  `getElementById()` returns `null`   Ensure the ID matches and the
-                                      script runs after the HTML element
-                                      exists
+| JavaScript does not run | Check `src="script.js"` and the browser console |
 
-  Link does not jump to a section     Match the link's `href="#id"` to
-                                      the section's `id`
+| Button click causes an error | Check the element ID and event listener |
 
-  New list item does not appear       Check that the list was found and
-                                      `appendChild()` is called
+| `getElementById()` returns `null` | Ensure the ID matches and the script runs after the HTML element exists |
 
-  CSS rule has no effect              Check selector spelling, braces,
-                                      property names, and values
+| Link does not jump to a section | Match the link's `href="#id"` to the section's `id` |
 
-  Elements are too close together     Adjust margin, padding, or gap
+| New list item does not appear | Check that the list was found and `appendChild()` is called |
 
-  Page looks small on mobile          Add the viewport meta tag
-  -----------------------------------------------------------------------
+| CSS rule has no effect | Check selector spelling, braces, property names, and values |
+
+| Elements are too close together | Adjust margin, padding, or gap |
+
+| Page looks small on mobile | Add the viewport meta tag |
 
 ## Debugging tip
 
@@ -772,7 +766,7 @@ In the browser, open Developer Tools and check the **Console** for
 JavaScript errors. Read the first error carefully; it often points to
 the problem.
 
-------------------------------------------------------------------------
+---
 
 # 11. Practice Challenges
 
@@ -795,7 +789,7 @@ try the optional challenges.
 5.  Add a button hover effect.
 6.  Make the navigation wrap neatly on a mobile screen.
 
-------------------------------------------------------------------------
+---
 
 # 12. Quick Questions and Answers
 
@@ -853,110 +847,46 @@ They can provide links and some native browser interactions, but
 JavaScript is commonly used for custom behaviour such as updating text
 or adding list items dynamically.
 
-------------------------------------------------------------------------
+---
 
 # 13. Practical Assessment
 
 ## Task: Customize the Tech Club Website
 
-**Suggested duration:** 5--7 minutes during the final practice period.
-
 Requirements:
 
--   Change the website title and main heading.
--   Add at least one activity.
--   Customize a CSS color or spacing value.
--   Modify the welcome button's message.
--   Demonstrate that the add-activity button works.
+- Change the website title and main heading.
+- Add at least one activity.
+- Customize a CSS color or spacing value.
+- Modify the welcome button's message.
+- Demonstrate that the add-activity button works.
 
-## Evaluation rubric
+---
 
-  Criteria                          Marks
-  ----------------------------- ---------
-  HTML structure and elements          25
-  CSS styling                          20
-  JavaScript event handling            20
-  DOM manipulation                     25
-  Successful demonstration             10
-  **Total**                       **100**
+# 14. Quick Revision Sheet
 
-This is a lightweight workshop assessment, not an exam. The goal is to
-check that participants can identify and modify the main parts of the
-website.
+- **HTML:** Structure and content of a webpage.
+- **CSS:** Styling and layout.
+- **JavaScript:** Logic and interaction.
+- **Element:** A unit of HTML content.
+- **Attribute:** Additional information on an HTML element.
+- **`id`:** Identifier for a particular element.
+- **`class`:** Reusable grouping for styling or selection.
+- **`nav`:** Groups navigation links.
+- **`ul` / `ol`:** Unordered and ordered lists.
+- **Selector:** Chooses which HTML elements a CSS rule styles.
+- **Margin:** Space outside an element's border.
+- **Padding:** Space inside an element's border.
+- **Function:** Reusable block of JavaScript instructions.
+- **Event:** Something that happens, such as a click.
+- **`addEventListener()`:** Registers a function for an event.
+- **DOM:** Structured representation of the webpage.
+- **`getElementById()`:** Finds an element by ID.
+- **`textContent`:** Reads or changes text.
+- **`createElement()`:** Creates an element.
+- **`appendChild()`:** Adds a child element.
 
-------------------------------------------------------------------------
-
-# 14. One-Hour Workshop Schedule
-
-  -----------------------------------------------------------------------
-  Time                    Topic                   Teaching activity
-  ----------------------- ----------------------- -----------------------
-  00:00--00:05            Introduction            Explain HTML, CSS, and
-                                                  JavaScript
-
-  00:05--00:20            HTML                    Build the navigation,
-                                                  sections, and list
-
-  00:20--00:30            CSS                     Style the page and
-                                                  navbar
-
-  00:30--00:40            JavaScript              Introduce variables,
-                                                  functions, and events
-
-  00:40--00:53            DOM                     Update text and add a
-                                                  list item
-
-  00:53--01:00            Practice and recap      Customize the project
-                                                  and connect the
-                                                  concepts
-  -----------------------------------------------------------------------
-
-## Teaching tips for a mixed-experience audience
-
--   Type the code in small sections and explain the result after each
-    section.
--   Ask complete beginners to focus on reproducing and understanding the
-    core code.
--   Give more experienced participants optional challenges instead of
-    moving the entire workshop faster.
--   Keep the browser visible while coding so participants can see the
-    result.
--   If time is running short, prioritize the working DOM demonstration
-    over extra CSS styling.
-
-------------------------------------------------------------------------
-
-# 15. Quick Revision Sheet
-
--   **HTML:** Structure and content of a webpage.
--   **CSS:** Styling and layout.
--   **JavaScript:** Logic and interaction.
--   **Element:** A unit of HTML content.
--   **Attribute:** Additional information on an HTML element.
--   **`id`:** Identifier for a particular element.
--   **`class`:** Reusable grouping for styling or selection.
--   **`nav`:** Groups navigation links.
--   **`ul` / `ol`:** Unordered and ordered lists.
--   **Selector:** Chooses which HTML elements a CSS rule styles.
--   **Margin:** Space outside an element's border.
--   **Padding:** Space inside an element's border.
--   **Function:** Reusable block of JavaScript instructions.
--   **Event:** Something that happens, such as a click.
--   **`addEventListener()`:** Registers a function for an event.
--   **DOM:** Structured representation of the webpage.
--   **`getElementById()`:** Finds an element by ID.
--   **`textContent`:** Reads or changes text.
--   **`createElement()`:** Creates an element.
--   **`appendChild()`:** Adds a child element.
-
-## Looking Ahead: Day 2 --- Website Development with AI
-
-In the next session, participants will use an AI tool such as Gemini to
-generate a more complete website. The concepts from Day 1 will help them
-understand the generated HTML, CSS, JavaScript, and DOM behaviour, and
-make informed changes rather than blindly copying code.
-
-------------------------------------------------------------------------
+---
 
 ## Final Advice
 
